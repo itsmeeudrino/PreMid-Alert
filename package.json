@@ -1,0 +1,17 @@
+{
+  "name": "premid-alert",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build --watch src/* --outdir=dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "graphql-request": "^7.0.1"
+  }
+}

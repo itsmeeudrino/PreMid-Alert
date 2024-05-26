@@ -1,0 +1,17 @@
+{
+  "name": "PreMiD Alert",
+  "description": "Get an alert when you visit a website that has a presence on https://premid.app/store",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/index.js"]
+    }
+  ],
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {}
+}
