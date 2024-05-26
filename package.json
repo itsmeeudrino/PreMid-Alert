@@ -3,7 +3,7 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "bun build --watch src/* --outdir=dist"
+    "build": "bun build src/* --outdir=dist"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.268"
